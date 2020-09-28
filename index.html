@@ -26,12 +26,23 @@
 			font-weight: bold;
 			margin: 0;
 		}
+		.hider{
+			z-index:100;
+			background-color: #000;
+			display: none;
+			position: fixed;
+			top:0;
+			left:0;
+			width:100%;
+			height:100%;
+		}
 	</style>
 </head>
 <body>
 	<div class="inner" id="inner">
 		<p id="text">0</p>
 	</div>
+	<div class="hider"></div>
 
 	<script>
 		'use strict';
