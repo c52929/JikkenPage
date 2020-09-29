@@ -1,7 +1,7 @@
 {
 	'use strict';
 	
-	document.getElementById('version').textContent="Geometrubik's ver0.1.13";
+	document.getElementById('version').textContent="Geometrubik's ver0.1.15";
 
 	let colors;
 	reset(0);
@@ -82,7 +82,7 @@
 		winSize=[window.innerWidth,window.innerHeight];
 	}
 // 	let saver=Array.from(colors);
-// 	document.getElementById('message2').textContent=`[${colors}]`;
+	document.getElementById('message').textContent=colors;
 
 	let oneSpot=document.getElementsByClassName('color');
 	for(let i=0; i<54; i++){
@@ -434,7 +434,7 @@
 			document.getElementsByClassName('color')[i].classList.add(colors[i]);
 		}
 // 		document.getElementById('message').textContent=`${saver==colors}`;
-		document.getElementById('message').textContent=`[${colors}]`;
+		document.getElementById('message2').textContent=colors;
 	}
 
 	// document.addEventListener('keydown',(event)=>{
