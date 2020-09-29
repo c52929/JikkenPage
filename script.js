@@ -422,11 +422,13 @@
 			}
 		}
 		// console.log(colors);
-		document.getElementById('message1').textContent=`[${colors}]`;
+		let saver=Array.from(colors);
+		document.getElementById('message2').textContent=`[${colors}]`;
 		$('.color').removeClass().addClass('color');
 		for(let i=0; i<54; i++){
 			document.getElementsByClassName('color')[i].classList.add(colors[i]);
-			document.getElementById('message2').textContent=`[${colors}]`;
+			document.getElementById('message2').textContent=`${saver==colors}`;
+			document.getElementById('message3').textContent=`[${colors}]`;
 		}
 	}
 
