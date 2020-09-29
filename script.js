@@ -433,8 +433,8 @@
 			}
 			document.getElementsByClassName('color')[i].classList.add(colors[i]);
 		}
-		document.getElementById('message').textContent=`${saver==colors}`;
-		document.getElementById('message3').textContent=`[${colors}]`;
+// 		document.getElementById('message').textContent=`${saver==colors}`;
+		document.getElementById('message').textContent=`[${colors}]`;
 	}
 
 	// document.addEventListener('keydown',(event)=>{
