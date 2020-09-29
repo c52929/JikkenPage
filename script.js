@@ -426,9 +426,12 @@
 			}
 		}
 		// console.log(colors);
-		$('.color').removeClass().addClass('color');
+// 		$('.color').removeClass().addClass('color');
+		const getColor=document.getElementsByClassName('color');
 		for(let i=0; i<54; i++){
-			document.getElementsByClassName('color')[i].classList.add(colors[i]);
+			getColor[i].classList.remove();
+			getColor[i].classList.add('color');
+			getColor[i].classList.add(colors[i]);
 		}
 		document.getElementById('message').textContent=`${saver==colors}`;
 		document.getElementById('message3').textContent=`[${colors}]`;
