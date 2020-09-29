@@ -86,10 +86,10 @@
 			event.preventDefault();
 			sPosition=[Math.round(event.touches[0].pageX),Math.round(event.touches[0].pageY)];
 		})
-		// oneSpot[i].addEventListener("touchmove",(event)=>{
-		// event.preventDefault();
-		// ePosition=[event.changedTouches[0].pageX, event.changedTouches[0].pageY];
-		// })
+		oneSpot[i].addEventListener("touchmove",(event)=>{
+		event.preventDefault();
+		ePosition=[event.changedTouches[0].pageX, event.changedTouches[0].pageY];
+		})
 		oneSpot[i].addEventListener("touchend",(event) =>{
 			ePosition=[Math.round(event.changedTouches[0].pageX),Math.round(event.changedTouches[0].pageY)];
 			positionCheck(ePosition);
