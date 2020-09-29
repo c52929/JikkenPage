@@ -1,7 +1,7 @@
 {
 	'use strict';
 	
-	document.getElementById('version').textContent="Geometrubik's ver0.1.11";
+	document.getElementById('version').textContent="Geometrubik's ver0.1.13";
 
 	let colors;
 	reset(0);
@@ -81,8 +81,8 @@
 	function windowLoad(){
 		winSize=[window.innerWidth,window.innerHeight];
 	}
-	let saver=Array.from(colors);
-	document.getElementById('message2').textContent=`[${colors}]`;
+// 	let saver=Array.from(colors);
+// 	document.getElementById('message2').textContent=`[${colors}]`;
 
 	let oneSpot=document.getElementsByClassName('color');
 	for(let i=0; i<54; i++){
@@ -427,11 +427,11 @@
 		}
 		// console.log(colors);
 // 		$('.color').removeClass().addClass('color');
-		const getColor=document.getElementsByClassName('color');
 		for(let i=0; i<54; i++){
-			getColor[i].classList.remove();
-			getColor[i].classList.add('color');
-			getColor[i].classList.add(colors[i]);
+			for(let j=0; j<6; j++){
+				document.getElementsByClassName('color')[i].classList.remove(['b','w','r','y','g','o'][j]);
+			}
+			document.getElementsByClassName('color')[i].classList.add(colors[i]);
 		}
 		document.getElementById('message').textContent=`${saver==colors}`;
 		document.getElementById('message3').textContent=`[${colors}]`;
