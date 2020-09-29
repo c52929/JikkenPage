@@ -85,7 +85,7 @@
 		oneSpot[i].addEventListener('touchstart',(event) =>{
 			event.preventDefault();
 			sPosition=[Math.round(event.touches[0].pageX),Math.round(event.touches[0].pageY)];
-			document.getElementById('message').textContent=`Started with (${sPosition})`;
+// 			document.getElementById('message').textContent=`Started with (${sPosition})`;
 		})
 		oneSpot[i].addEventListener("touchmove",(event)=>{
 		event.preventDefault();
@@ -93,7 +93,7 @@
 		})
 		oneSpot[i].addEventListener("touchend",(event) =>{
 			ePosition=[Math.round(event.changedTouches[0].pageX),Math.round(event.changedTouches[0].pageY)];
-			document.getElementById('message2').textContent=`Ended with (${ePosition})`;
+// 			document.getElementById('message2').textContent=`Ended with (${ePosition})`;
 			positionCheck(ePosition);
 			// console.log(`(${sPosition}) => (${ePosition})`);
 			// console.log(`(${sPosition}) => (${ePosition})`);
@@ -422,9 +422,11 @@
 			}
 		}
 		// console.log(colors);
+		document.getElementById('message1').textContent=`[${colors}]`;
 		$('.color').removeClass().addClass('color');
 		for(let i=0; i<54; i++){
 			document.getElementsByClassName('color')[i].classList.add(colors[i]);
+			document.getElementById('message2').textContent=`[${colors}]`;
 		}
 	}
 
