@@ -1,7 +1,7 @@
 {
 	'use strict';
 	
-	document.getElementById('version').textContent="Geometrubik's ver0.1.16";
+	document.getElementById('version').textContent="Geometrubik's ver0.1.17";
 
 	let colors;
 	reset(0);
@@ -434,7 +434,7 @@
 			document.getElementsByClassName('color')[i].classList.add(colors[i]);
 		}
 // 		document.getElementById('message').textContent=`${saver==colors}`;
-// 		document.getElementById('message2').textContent=colors;
+		document.getElementById('message3').textContent=colors;
 	}
 
 	// document.addEventListener('keydown',(event)=>{
