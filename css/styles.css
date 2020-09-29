@@ -114,10 +114,10 @@ ul, ol {
 }
 
 table {
-  position: fixed;
-  top: calc(2.56em + 18px);
-  left: 50%;
-  transform: translateX(-50%);
+/*   position: fixed; */
+/*   top: calc(2.56em + 18px); */
+/*   left: 50%; */
+/*   transform: translateX(-50%); */
   border-collapse: collapse;
   margin: 0 auto;
   z-index: 2;
