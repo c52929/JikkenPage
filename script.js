@@ -427,6 +427,7 @@
 		}
 		// console.log(colors);
 // 		$('.color').removeClass().addClass('color');
+		document.getElementById('message3').textContent='Hello!';
 		for(let i=0; i<54; i++){
 			for(let j=0; j<6; j++){
 				document.getElementsByClassName('color')[i].classList.remove(['b','w','r','y','g','o'][j]);
