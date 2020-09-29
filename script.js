@@ -435,41 +435,41 @@
 	// 	}
 	// })
 
-	document.getElementById('hamburger').addEventListener('click',()=>{
-		menu_toggle();
-	})
-	document.getElementById('hider').addEventListener('click',()=>{
-		menu_toggle();
-	})
-	function menu_toggle(){
-		document.getElementById('hamburger').classList.toggle('fa-bars');
-		document.getElementById('hamburger').classList.toggle('fa-times');
-		document.getElementById('hider').classList.toggle('none');
-		document.getElementById('hamburger_menu').classList.toggle('none');
-	}
+// 	document.getElementById('hamburger').addEventListener('click',()=>{
+// 		menu_toggle();
+// 	})
+// 	document.getElementById('hider').addEventListener('click',()=>{
+// 		menu_toggle();
+// 	})
+// 	function menu_toggle(){
+// 		document.getElementById('hamburger').classList.toggle('fa-bars');
+// 		document.getElementById('hamburger').classList.toggle('fa-times');
+// 		document.getElementById('hider').classList.toggle('none');
+// 		document.getElementById('hamburger_menu').classList.toggle('none');
+// 	}
 
 	const allPatterns=[pR,pM,pL,pU,pE,pD,pF,pS,pB];
-	document.getElementById('menuScramble').addEventListener('click',()=>{
-		let r;
-		let r2;
-		for(let i=0; i<25; i++){
-			r=Math.floor(Math.random()*9);
-			if(r<6){
-				pattern(allPatterns[r],`to${['Up','Down','Left','Right'][Math.floor(Math.random()*2+2*Math.floor(r/3))]}`,allPatterns[r][Math.floor(Math.random()*allPatterns[r].length)]);
-			}else{
-				r2=Math.floor(Math.random()*allPatterns[r].length);
-				pattern(allPatterns[r],`to${['Left','Right','Up','Down'][2*(Math.floor(r2/3)%2)+Math.floor(Math.random()*2)]}`,allPatterns[r][r2]);
-			}
-		}
-		menu_toggle();
-	})
-	document.getElementById('menuReset').addEventListener('click',()=>{
-		$('.color').removeClass().addClass('color');
-		reset(1);
-		for(let i=0; i<54; i++){
-			document.getElementsByClassName('color')[i].classList.add(colors[i]);
-		}
-		menu_toggle();
-	})
+// 	document.getElementById('menuScramble').addEventListener('click',()=>{
+// 		let r;
+// 		let r2;
+// 		for(let i=0; i<25; i++){
+// 			r=Math.floor(Math.random()*9);
+// 			if(r<6){
+// 				pattern(allPatterns[r],`to${['Up','Down','Left','Right'][Math.floor(Math.random()*2+2*Math.floor(r/3))]}`,allPatterns[r][Math.floor(Math.random()*allPatterns[r].length)]);
+// 			}else{
+// 				r2=Math.floor(Math.random()*allPatterns[r].length);
+// 				pattern(allPatterns[r],`to${['Left','Right','Up','Down'][2*(Math.floor(r2/3)%2)+Math.floor(Math.random()*2)]}`,allPatterns[r][r2]);
+// 			}
+// 		}
+// 		menu_toggle();
+// 	})
+// // 	document.getElementById('menuReset').addEventListener('click',()=>{
+// 		$('.color').removeClass().addClass('color');
+// 		reset(1);
+// 		for(let i=0; i<54; i++){
+// 			document.getElementsByClassName('color')[i].classList.add(colors[i]);
+// 		}
+// 		menu_toggle();
+// 	})
 
 }
