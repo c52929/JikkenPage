@@ -443,3 +443,16 @@ function pattern(cmd,dir,spotNum){
 // 		}
 // 	}
 // })
+
+document.getElementById('hamburger').addEventListener('click',()=>{
+	menu_toggle();
+})
+document.getElementById('hider').addEventListener('click',()=>{
+	menu_toggle();
+})
+function menu_toggle(){
+	document.getElementById('hamburger').classList.toggle('fa-bars');
+	document.getElementById('hamburger').classList.toggle('fa-times');
+	document.getElementById('hider').classList.toggle('none');
+	document.getElementById('hamburger_menu').classList.toggle('none');
+}
