@@ -116,7 +116,7 @@ ul,ol{
 table {
   border-collapse: collapse;
 	position:fixed;
-	top:12px;
+	top:calc(2.56em + 12px);
 	left:50%;
 	transform:translateX(-50%);
 }
