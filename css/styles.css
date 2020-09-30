@@ -21,7 +21,6 @@
 } */
 table {
   border-collapse: collapse;
-  margin: 12px auto;
 	position:fixed;
 	top:12px;
 	left:50%;
@@ -136,6 +135,11 @@ table tr:nth-of-type(6):nth-of-type(6) td:nth-of-type(7),
 table tr:nth-of-type(6):nth-of-type(6) td:nth-of-type(8),
 table tr:nth-of-type(6):nth-of-type(6) td:nth-of-type(9) {
   border-bottom: 2px solid #000;
+}
+
+p#version{
+	color:#a1a499;
+	text-align:center;
 }
 
 .transparent {
