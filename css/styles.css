@@ -12,13 +12,11 @@
   overflow-x: hidden;
 }
 
-/* ul,ol{
-	margin-block-start: 1em;
-	margin-block-end: 1em;
-	margin-inline-start: 0px;
-	margin-inline-end: 0px;
-	padding-inline-start: 40px;
-} */
+ul,ol{
+	margin:4px 0;
+	padding-inline-start: 2em;
+	list-style:none;
+}
 table {
   border-collapse: collapse;
 	position:fixed;
@@ -140,6 +138,10 @@ table tr:nth-of-type(6):nth-of-type(6) td:nth-of-type(9) {
 p#version{
 	color:#a1a499;
 	text-align:center;
+	position:fixed;
+	bottom:2px;
+	left:50%;
+	transform:translateX(-50%);
 }
 
 .transparent {
