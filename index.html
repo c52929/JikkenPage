@@ -14,8 +14,19 @@
 	<body>
 		<div class="inner">
 			<table></table>
-			<p id="version">ver 10</p>
+			<p id="version">ver 11</p>
 		</div>
+		<script>
+			'use strict';
+			for(let i=0; i<12; i++){
+				const addTr=document.createElement('tr');
+				addTr.setAttribute('id',`colorsHere${i}`);
+				if([0,6,9].indexOf(i)>-1){
+					addTr.innerHTML='<td class="empty" colspan="3" rowspan="3"></td>';
+				}
+				document.querySelector('table').appendChild(addTr);
+			}
+		</script>
 		<script src="script.js"></script>
 	</body>
 </html>
