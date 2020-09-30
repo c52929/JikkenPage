@@ -1,7 +1,5 @@
 {
 	'use strict';
-	
-	document.getElementById('version').textContent="Geometrubik's ver0.1.17";
 
 	let colors;
 	reset(0);
@@ -81,23 +79,19 @@
 	function windowLoad(){
 		winSize=[window.innerWidth,window.innerHeight];
 	}
-// 	let saver=Array.from(colors);
-// 	document.getElementById('message').textContent=colors;
 
 	let oneSpot=document.getElementsByClassName('color');
 	for(let i=0; i<54; i++){
 		oneSpot[i].addEventListener('touchstart',(event) =>{
 			event.preventDefault();
 			sPosition=[Math.round(event.touches[0].pageX),Math.round(event.touches[0].pageY)];
-			document.getElementById('message').textContent=`${i}, (${sPosition})`;
 		})
-		oneSpot[i].addEventListener("touchmove",(event)=>{
-		event.preventDefault();
-		ePosition=[event.changedTouches[0].pageX, event.changedTouches[0].pageY];
-		})
+		// oneSpot[i].addEventListener("touchmove",(event)=>{
+		// event.preventDefault();
+		// ePosition=[event.changedTouches[0].pageX, event.changedTouches[0].pageY];
+		// })
 		oneSpot[i].addEventListener("touchend",(event) =>{
 			ePosition=[Math.round(event.changedTouches[0].pageX),Math.round(event.changedTouches[0].pageY)];
-			document.getElementById('message2').textContent=`${i}, (${ePosition})`;
 			positionCheck(ePosition);
 			// console.log(`(${sPosition}) => (${ePosition})`);
 			// console.log(`(${sPosition}) => (${ePosition})`);
@@ -426,16 +420,10 @@
 			}
 		}
 		// console.log(colors);
-// 		$('.color').removeClass().addClass('color');
-		document.getElementById('message3').textContent='Hello!';
+		$('.color').removeClass().addClass('color');
 		for(let i=0; i<54; i++){
-			for(let j=0; j<6; j++){
-				document.getElementsByClassName('color')[i].classList.remove(['b','w','r','y','g','o'][j]);
-			}
 			document.getElementsByClassName('color')[i].classList.add(colors[i]);
 		}
-// 		document.getElementById('message').textContent=`${saver==colors}`;
-		document.getElementById('message3').textContent=colors;
 	}
 
 	// document.addEventListener('keydown',(event)=>{
@@ -447,41 +435,41 @@
 	// 	}
 	// })
 
-// 	document.getElementById('hamburger').addEventListener('click',()=>{
-// 		menu_toggle();
-// 	})
-// 	document.getElementById('hider').addEventListener('click',()=>{
-// 		menu_toggle();
-// 	})
-// 	function menu_toggle(){
-// 		document.getElementById('hamburger').classList.toggle('fa-bars');
-// 		document.getElementById('hamburger').classList.toggle('fa-times');
-// 		document.getElementById('hider').classList.toggle('none');
-// 		document.getElementById('hamburger_menu').classList.toggle('none');
-// 	}
+	document.getElementById('hamburger').addEventListener('click',()=>{
+		menu_toggle();
+	})
+	document.getElementById('hider').addEventListener('click',()=>{
+		menu_toggle();
+	})
+	function menu_toggle(){
+		document.getElementById('hamburger').classList.toggle('fa-bars');
+		document.getElementById('hamburger').classList.toggle('fa-times');
+		document.getElementById('hider').classList.toggle('none');
+		document.getElementById('hamburger_menu').classList.toggle('none');
+	}
 
 	const allPatterns=[pR,pM,pL,pU,pE,pD,pF,pS,pB];
-// 	document.getElementById('menuScramble').addEventListener('click',()=>{
-// 		let r;
-// 		let r2;
-// 		for(let i=0; i<25; i++){
-// 			r=Math.floor(Math.random()*9);
-// 			if(r<6){
-// 				pattern(allPatterns[r],`to${['Up','Down','Left','Right'][Math.floor(Math.random()*2+2*Math.floor(r/3))]}`,allPatterns[r][Math.floor(Math.random()*allPatterns[r].length)]);
-// 			}else{
-// 				r2=Math.floor(Math.random()*allPatterns[r].length);
-// 				pattern(allPatterns[r],`to${['Left','Right','Up','Down'][2*(Math.floor(r2/3)%2)+Math.floor(Math.random()*2)]}`,allPatterns[r][r2]);
-// 			}
-// 		}
-// 		menu_toggle();
-// 	})
-// // 	document.getElementById('menuReset').addEventListener('click',()=>{
-// 		$('.color').removeClass().addClass('color');
-// 		reset(1);
-// 		for(let i=0; i<54; i++){
-// 			document.getElementsByClassName('color')[i].classList.add(colors[i]);
-// 		}
-// 		menu_toggle();
-// 	})
+	document.getElementById('menuScramble').addEventListener('click',()=>{
+		let r;
+		let r2;
+		for(let i=0; i<25; i++){
+			r=Math.floor(Math.random()*9);
+			if(r<6){
+				pattern(allPatterns[r],`to${['Up','Down','Left','Right'][Math.floor(Math.random()*2+2*Math.floor(r/3))]}`,allPatterns[r][Math.floor(Math.random()*allPatterns[r].length)]);
+			}else{
+				r2=Math.floor(Math.random()*allPatterns[r].length);
+				pattern(allPatterns[r],`to${['Left','Right','Up','Down'][2*(Math.floor(r2/3)%2)+Math.floor(Math.random()*2)]}`,allPatterns[r][r2]);
+			}
+		}
+		menu_toggle();
+	})
+	document.getElementById('menuReset').addEventListener('click',()=>{
+		$('.color').removeClass().addClass('color');
+		reset(1);
+		for(let i=0; i<54; i++){
+			document.getElementsByClassName('color')[i].classList.add(colors[i]);
+		}
+		menu_toggle();
+	})
 
 }
