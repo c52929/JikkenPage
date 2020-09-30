@@ -1,37 +1,36 @@
 {
 	'use strict';
+	let colors=[];
 
-	let colors;
-	reset(0);
-
-	function reset(mode){
-		colors=[];
-		for(let i=0; i<12; i++){
-			if(3<=i && i<=5){
-				for(let j=0; j<3; j++){
-					for(let k=0; k<3; k++){
-						if(mode==0){
-							const newColor=document.createElement('td');
-							newColor.classList.add('color');
-							newColor.classList.add(['w','r','y'][(j)%3]);
-							document.getElementById(`colorsHere${i}`).appendChild(newColor);
-						}
-						colors.push(['w','r','y'][(j)%3]);
-					}
+	for(let i=0; i<12; i++){
+		if(3<=i && i<=5){
+			for(let j=0; j<3; j++){
+				for(let k=0; k<3; k++){
+					const newColor=document.createElement('td');
+					newColor.classList.add('color');
+					newColor.classList.add(['w','r','y'][(j)%3]);
+					document.getElementById(`colorsHere${i}`).appendChild(newColor);
+					colors.push(['w','r','y'][(j)%3]);
 				}
-			}else{
-				for(let j=0; j<3; j++){
-					if(mode==0){
-						const newColor=document.createElement('td');
-						newColor.classList.add('color');
-						newColor.classList.add(['b','','g','o'][Math.floor(i/3)]);
-						document.getElementById(`colorsHere${i}`).appendChild(newColor);
-					}
-					colors.push(['b','','g','o'][Math.floor(i/3)]);
-				}
+			}
+		}else{
+			for(let j=0; j<3; j++){
+				const newColor=document.createElement('td');
+				newColor.classList.add('color');
+				newColor.classList.add(['b','','g','o'][Math.floor(i/3)]);
+				document.getElementById(`colorsHere${i}`).appendChild(newColor);
+				colors.push(['b','','g','o'][Math.floor(i/3)]);
 			}
 		}
 	}
+
+	// ここから今だけ
+	// const getColor=document.getElementsByClassName('color');
+	// for(let i=0; i<getColor.length; i++){
+	// 	getColor[i].textContent=i;
+	// 	getColor[i].style='text-align:center; padding:6px;';
+	// }
+	// ここまで今だけ
 
 	// console.log(colors);
 
@@ -434,42 +433,4 @@
 	// 		}
 	// 	}
 	// })
-
-	document.getElementById('hamburger').addEventListener('click',()=>{
-		menu_toggle();
-	})
-	document.getElementById('hider').addEventListener('click',()=>{
-		menu_toggle();
-	})
-	function menu_toggle(){
-		document.getElementById('hamburger').classList.toggle('fa-bars');
-		document.getElementById('hamburger').classList.toggle('fa-times');
-		document.getElementById('hider').classList.toggle('none');
-		document.getElementById('hamburger_menu').classList.toggle('none');
-	}
-
-	const allPatterns=[pR,pM,pL,pU,pE,pD,pF,pS,pB];
-	document.getElementById('menuScramble').addEventListener('click',()=>{
-		let r;
-		let r2;
-		for(let i=0; i<25; i++){
-			r=Math.floor(Math.random()*9);
-			if(r<6){
-				pattern(allPatterns[r],`to${['Up','Down','Left','Right'][Math.floor(Math.random()*2+2*Math.floor(r/3))]}`,allPatterns[r][Math.floor(Math.random()*allPatterns[r].length)]);
-			}else{
-				r2=Math.floor(Math.random()*allPatterns[r].length);
-				pattern(allPatterns[r],`to${['Left','Right','Up','Down'][2*(Math.floor(r2/3)%2)+Math.floor(Math.random()*2)]}`,allPatterns[r][r2]);
-			}
-		}
-		menu_toggle();
-	})
-	document.getElementById('menuReset').addEventListener('click',()=>{
-		$('.color').removeClass().addClass('color');
-		reset(1);
-		for(let i=0; i<54; i++){
-			document.getElementsByClassName('color')[i].classList.add(colors[i]);
-		}
-		menu_toggle();
-	})
-
 }
