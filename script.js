@@ -2,26 +2,34 @@
 
 console.log('Hello!');
 
-let colors=[];
+let colors;
+reset(0);
 
-for(let i=0; i<12; i++){
-	if(3<=i && i<=5){
-		for(let j=0; j<3; j++){
-			for(let k=0; k<3; k++){
-				const newColor=document.createElement('td');
-				newColor.classList.add('color');
-				newColor.classList.add(['w','r','y'][(j)%3]);
-				document.getElementById(`colorsHere${i}`).appendChild(newColor);
-				colors.push(['w','r','y'][(j)%3]);
+function reset(mode){
+	colors=[];
+	for(let i=0; i<12; i++){
+		if(3<=i && i<=5){
+			for(let j=0; j<3; j++){
+				for(let k=0; k<3; k++){
+					if(mode==0){
+						const newColor=document.createElement('td');
+						newColor.classList.add('color');
+						newColor.classList.add(['w','r','y'][(j)%3]);
+						document.getElementById(`colorsHere${i}`).appendChild(newColor);
+					}
+					colors.push(['w','r','y'][(j)%3]);
+				}
 			}
-		}
-	}else{
-		for(let j=0; j<3; j++){
-			const newColor=document.createElement('td');
-			newColor.classList.add('color');
-			newColor.classList.add(['b','','g','o'][Math.floor(i/3)]);
-			document.getElementById(`colorsHere${i}`).appendChild(newColor);
-			colors.push(['b','','g','o'][Math.floor(i/3)]);
+		}else{
+			for(let j=0; j<3; j++){
+				if(mode==0){
+					const newColor=document.createElement('td');
+					newColor.classList.add('color');
+					newColor.classList.add(['b','','g','o'][Math.floor(i/3)]);
+					document.getElementById(`colorsHere${i}`).appendChild(newColor);
+				}
+				colors.push(['b','','g','o'][Math.floor(i/3)]);
+			}
 		}
 	}
 }
