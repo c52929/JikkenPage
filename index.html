@@ -3,62 +3,79 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Jikken</title>
+	<title>Jikken: EventListener 重複の可能性</title>
 	<!-- <link rel="icon" href="#"> -->
 	<!-- <link rel="stylesheet" href="css/styles.css"> -->
 	<!-- <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet"> -->
 	<!-- <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script> -->
 	<!-- <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script> -->
 	<style>
+		*{
+			margin:0;
+			border:none;
+			padding:0;
+			font-family: Arial,'Yu Gothic','Hiragino Kaku Gothic ProN','Yu Mincho Light','Hiragino Mincho ProN','Meiryo UI',sans-serif;
+		}
 		.inner{
-			box-sizing: border-box;
-			position:fixed;
-			width:50%;
-			height:50%;
-			top:50%;
-			left:50%;
-			transform: translate(-50%,-50%);
-			background-color: #c52929;
-			padding:4px 8px;
-		}
-		#text{
-			color:#fff;
-			font-weight: bold;
-			margin: 0;
-		}
-		.hider{
-			z-index:100;
-			background-color: #000;
-			display: none;
-			position: fixed;
-			top:0;
-			left:0;
 			width:100%;
-			height:100%;
+			max-width:1366px;
+			margin:0 auto;
+			overflow-x:hidden;
+		}
+		ul,ol{
+			margin-block-start: 1em;
+			margin-block-end: 1em;
+			margin-inline-start: 0px;
+			margin-inline-end: 0px;
+			padding-inline-start: 40px;
+		}
+		.moveButton{
+			border-radius: 50%;
+			box-sizing: border-box;
+			width:20vw;
+			height:20vw;
+			margin: 4px;
+			position:fixed;
+			bottom:10%;
+			background-color: #e5e5e5;
+		}
+		.moveButton.hover{
+			border:3px solid #a1a499;
+		}
+		#toLeft{
+			left:10%;
+		}
+		#toRight{
+			right:10%;
+		}
+		
+		.transparent{
+			opacity:0 !important;
+		}
+		.none{
+			display:none !important;
 		}
 	</style>
 </head>
 <body>
-	<div class="inner" id="inner">
-		<p id="text">0</p>
+	<div class="inner">
+		<div class="moveButton" id="toLeft"></div>
+		<div class="moveButton" id="toRight"></div>
+		<script>
+			'use strict';
+			{
+				for(let i=0; i<2; i++){
+					document.getElementsByClassName('moveButton')[i].addEventListener('touchstart',(event)=>{
+						event.preventDefault();
+						document.getElementsByClassName('moveButton')[i].classList.add('hover');
+					})
+					document.getElementsByClassName('moveButton')[i].addEventListener('touchend',(event)=>{
+						event.preventDefault();
+						document.getElementsByClassName('moveButton')[i].classList.remove('hover');
+					})
+				}
+			}
+		</script>
 	</div>
-	<div class="hider"></div>
-
-	<script>
-		'use strict';
-		{
-			let touched=0;
-			
-			document.getElementById('inner').addEventListener('touchstart',(event)=>{
-				event.preventDefault();
-			})
-			document.getElementById('inner').addEventListener('touchend',(event)=>{
-				event.preventDefault();
-				touched++;
-				console.log(touched);
-				document.getElementById('text').textContent=touched;
-			})
-		}
-	</script>
 </body>
 </html>
