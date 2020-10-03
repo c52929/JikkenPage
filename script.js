@@ -462,8 +462,7 @@ document.getElementById('menuScramble').addEventListener('click',()=>{
 // 	let r2;
 	let rs;
 	for(let i=0; i<25; i++){
-		rs[0]=allPatterns[Math.floor(Math.random()*9)];
-		rs[1]=Math.floor(Math.random()*3)+1;
+		rs=[allPatterns[Math.floor(Math.random()*9)], Math.floor(Math.random()*3)+1];
 		rs[2]=Math.floor(Math.random()*rs[0].length);
 		rs[3]=rs[0][rs[2]];
 		for(let j=0; j<rs[1]; j++){
@@ -477,6 +476,7 @@ document.getElementById('menuScramble').addEventListener('click',()=>{
 		}
 	}
 	menu_toggle();
+	document.getElementById('version').textContent=rs;
 })
 document.getElementById('menuReset').addEventListener('click',()=>{
 	$('.color').removeClass().addClass('color');
