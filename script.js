@@ -460,11 +460,13 @@ const allPatterns=[pR,pM,pL,pU,pE,pD,pF,pS,pB];
 document.getElementById('menuScramble').addEventListener('click',()=>{
 // 	let r;
 // 	let r2;
-	let rs;
+	let rs=[];
 	for(let i=0; i<25; i++){
+		console.log(rs);
 		rs=[allPatterns[Math.floor(Math.random()*9)], Math.floor(Math.random()*3)+1];
-		rs[2]=Math.floor(Math.random()*rs[0].length);
-		rs[3]=rs[0][rs[2]];
+		rs.push(Math.floor(Math.random()*rs[0].length));
+		rs.push(rs[0][rs[2]]);
+		console.log(rs);
 		for(let j=0; j<rs[1]; j++){
 			if(r<3){
 				pattern(rs[0],'toUp',rs[3]);
