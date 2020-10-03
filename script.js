@@ -468,9 +468,9 @@ document.getElementById('menuScramble').addEventListener('click',()=>{
 		rs.push(rs[0][rs[2]]);
 		console.log(rs);
 		for(let j=0; j<rs[1]; j++){
-			if(r<3){
+			if(rs[0]<3){
 				pattern(rs[0],'toUp',rs[3]);
-			}else if(r<6){
+			}else if(rs[0]<6){
 				pattern(rs[0],'toLeft',rs[3]);
 			}else{
 				pattern(rs[0],`to${['Left','Up'][Math.floor(rs[2]/3)%3]}`,rs[3]);
