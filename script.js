@@ -1,6 +1,6 @@
 'use strict';
 
-console.log('Hello!');
+// console.log('Hello!');
 
 let colors;
 reset(0);
@@ -458,15 +458,22 @@ function menu_toggle(){
 }
 const allPatterns=[pR,pM,pL,pU,pE,pD,pF,pS,pB];
 document.getElementById('menuScramble').addEventListener('click',()=>{
-	let r;
-	let r2;
+// 	let r;
+// 	let r2;
+	let rs;
 	for(let i=0; i<25; i++){
-		r=Math.floor(Math.random()*9);
-		if(r<6){
-			pattern(allPatterns[r],`to${['Up','Down','Left','Right'][Math.floor(Math.random()*2+2*Math.floor(r/3))]}`,allPatterns[r][Math.floor(Math.random()*allPatterns[r].length)]);
-		}else{
-			r2=Math.floor(Math.random()*allPatterns[r].length);
-			pattern(allPatterns[r],`to${['Left','Right','Up','Down'][2*(Math.floor(r2/3)%2)+Math.floor(Math.random()*2)]}`,allPatterns[r][r2]);
+		rs[0]=allPatterns[Math.floor(Math.random()*9)];
+		rs[1]=Math.floor(Math.random()*3)+1;
+		rs[2]=Math.floor(Math.random()*rs[0].length);
+		rs[3]=rs[0][rs[2]];
+		for(let j=0; j<rs[1]; j++){
+			if(r<3){
+				pattern(rs[0],'toUp',rs[3]);
+			}else if(r<6){
+				pattern(rs[0],'toLeft',rs[3]);
+			}else{
+				pattern(rs[0],`to${['Left','Up'][Math.floor(rs[2]/3)%3]}`,rs[3]);
+			}
 		}
 	}
 	menu_toggle();
