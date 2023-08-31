@@ -85,6 +85,10 @@ table td.priority {
   white-space: nowrap;
 }
 
+table td.small {
+  font-size: 0.96em;
+}
+
 table td span.nowrap {
   display: inline-block;
   font-weight: bold;
