@@ -1,0 +1,41 @@
+*{
+  margin:0;
+  border:none;
+  padding:0;
+  font-family: Arial,'Yu Gothic','Hiragino Kaku Gothic ProN','Yu Mincho Light','Hiragino Mincho ProN','Meiryo UI',sans-serif;
+}
+.inner{
+  width:100%;
+  max-width:1366px;
+  margin:0 auto;
+  overflow-x:hidden;
+}
+// ul,ol{
+// 	margin: 8px 0;
+// 	padding-inline-start: 2em;
+// }
+
+h1,h2{
+  margin: 8px;
+}
+h3{
+  margin: 16px 8px 8px;
+}
+p{
+  margin: 8px;
+  &#version{
+    margin: 0 8px 24px ;
+    color: #a1a499;
+  }
+}
+code{
+  display: block;
+  margin: 8px;
+}
+
+.transparent{
+  opacity:0 !important;
+}
+.none{
+  display:none !important;
+}
