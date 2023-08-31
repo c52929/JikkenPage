@@ -35,7 +35,8 @@ code {
 }
 
 a.notel {
-  pointer-events: none;
+  color: #000;
+  text-decoration: none;
   cursor: text;
 }
 

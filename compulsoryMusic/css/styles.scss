@@ -5,12 +5,14 @@
   padding:0;
 }
 .inner{
+  color:#282523;
   max-width:1366px;
   margin:0 auto;
   overflow-x:hidden;
   width:96%;
 }
-a{
+a,
+a span{
   color:#2c84cc;
   font-weight: bold;
   text-decoration: none;
@@ -19,11 +21,15 @@ h1{
   padding-top: 18px;
   margin: 0 0 12px;
 }
-code{
-  display: block;
-  font-size: 2em;
+h2{
+  // display: block;
+  // font-size: 2em;
   padding-top: 18px;
   margin: 0 0 8px;
+  a{
+    color:#282523;
+    cursor: text;
+  }
 }
 .tac{
   text-align: center;
