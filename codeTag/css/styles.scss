@@ -32,6 +32,10 @@ code{
   display: block;
   margin: 8px;
 }
+a.notel{
+  pointer-events: none;
+  cursor: text;
+}
 
 .transparent{
   opacity:0 !important;
