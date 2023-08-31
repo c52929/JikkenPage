@@ -95,6 +95,7 @@ table td.toosmall {
 
 table td span.nowrap {
   display: inline-block;
+  font-weight: bold;
 }
 
 p {
