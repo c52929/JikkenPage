@@ -130,6 +130,10 @@ div.noMargin p {
   margin: 0;
 }
 
+div.marginn {
+  margin: 12px 0;
+}
+
 .transparent {
   opacity: 0 !important;
 }

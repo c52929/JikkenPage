@@ -95,7 +95,6 @@ table td.toosmall {
 
 table td span.nowrap {
   display: inline-block;
-  font-weight: bold;
 }
 
 p {
@@ -106,13 +105,17 @@ p {
   color: #008839;
 }
 
+p.gekiatsu {
+  display: inline-block;
+}
+
 .red {
   color: #f00;
 }
 
 div#updates {
   color: #a1a499;
-  font-size: 0.72em;
+  font-size: 11px;
   margin: 36px 0 4px;
 }
 
@@ -120,11 +123,21 @@ div#updates p {
   margin: 0 0 4px;
 }
 
+div#updates table {
+  border: none;
+}
+
 div#updates table td {
   border: 1px #ccc solid;
+  font-size: 11px;
+}
+
+div#updates table td.noBorder {
+  border: 0;
 }
 
 div#updates table td p {
+  font-size: 11px;
   margin: 0;
 }
 

@@ -74,7 +74,6 @@ table{
     }
     span.nowrap{
       display: inline-block;
-      font-weight: bold;
     }
   }
 }
@@ -84,20 +83,29 @@ p{
 .gekiatsu{
   color: #008839;
 }
+p.gekiatsu{
+  display: inline-block;
+}
 .red{
   color:#f00;
 }
 div#updates{
   color: #a1a499;
-  font-size: 0.72em;
+  font-size: 11px;
   margin: 36px 0 4px;
   p{
     margin: 0 0 4px;
   }
   table{
+    border: none;
     td{
       border: 1px #ccc solid;
+      font-size: 11px;
+      &.noBorder{
+        border: 0;
+      }
       p{
+        font-size: 11px;
         margin: 0;
       }
     }
