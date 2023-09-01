@@ -113,6 +113,10 @@ p.gekiatsu {
   color: #f00;
 }
 
+.red span {
+  color: #f00;
+}
+
 div#updates {
   color: #a1a499;
   font-size: 11px;

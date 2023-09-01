@@ -65,6 +65,10 @@ div.here#list4 p {
   text-align: center;
 }
 
+p.fz8px {
+  font-size: 8px;
+}
+
 p.fz12px {
   font-size: 12px;
 }
