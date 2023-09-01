@@ -65,24 +65,53 @@ div.here#list4 p {
   text-align: center;
 }
 
-p.fz12 {
+p#fz12 {
   font-size: 12px;
 }
 
-p.fz144 {
+p#fz144 {
   font-size: 14.4px;
 }
 
-p.fz16 {
+p#fz16 {
   font-size: 16px;
 }
 
-p.fz18 {
+p#fz18 {
   font-size: 18px;
 }
 
 p.dib {
   display: inline-block;
+  margin: 12px 0;
+}
+
+p.default {
+  margin: 12px 0 0;
+}
+
+p#fz8em {
+  font-size: 0.8em;
+}
+
+p#fz1em {
+  font-size: 1em;
+}
+
+p#fz12em {
+  font-size: 1.2em;
+}
+
+p#fz80percent {
+  font-size: 80%;
+}
+
+p#fz100percent {
+  font-size: 100%;
+}
+
+p#fz120percent {
+  font-size: 120%;
 }
 
 .transparent {
