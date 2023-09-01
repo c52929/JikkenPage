@@ -12,6 +12,11 @@
   overflow-x: hidden;
 }
 
+ul, ol {
+  margin: 8px 0;
+  padding-inline-start: 1.2em;
+}
+
 h1 {
   margin: 8x 0 12px;
 }
@@ -26,9 +31,33 @@ table td {
   padding: 1px 4px;
 }
 
-div#here {
+div.here {
   border: 1px solid #282523;
   padding: 8px;
+}
+
+div.here#here {
+  margin: 4px 0 16px;
+}
+
+div.here.list {
+  margin: 16px 0;
+}
+
+div.here#list2 p {
+  text-align: center;
+}
+
+div.here#list3 {
+  display: inline-block;
+}
+
+div.here#list4 {
+  display: inline-block;
+}
+
+div.here#list4 p {
+  text-align: center;
 }
 
 .transparent {
