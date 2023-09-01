@@ -99,6 +99,14 @@ div.dib{
   width:100%;
 }
 
+div.noMargin{
+  // border: 1px solid #282523;
+  margin: 0;
+  p{
+    margin: 0;
+  }
+}
+
 
 .transparent{
   opacity:0 !important;

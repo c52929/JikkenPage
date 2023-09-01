@@ -122,6 +122,14 @@ div.dib {
   width: 100%;
 }
 
+div.noMargin {
+  margin: 0;
+}
+
+div.noMargin p {
+  margin: 0;
+}
+
 .transparent {
   opacity: 0 !important;
 }
