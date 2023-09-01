@@ -5,21 +5,29 @@
   font-family: Arial,'Yu Gothic','Hiragino Kaku Gothic ProN','Yu Mincho Light','Hiragino Mincho ProN','Meiryo UI',sans-serif;
 }
 .inner{
-  width:100%;
+  width:96%;
   max-width:1366px;
   margin:0 auto;
   overflow-x:hidden;
 }
-ul,ol{
-  font-size: 18px;
-	margin: 8px 0;
-	padding-inline-start: 2em;
-  li{
-    margin: 0 0 4px;
+// ul,ol{
+// 	margin: 8px 0;
+// 	padding-inline-start: 2em;
+// }
+h1{
+  margin: 8x 0 12px;
+}
+table{
+  border-collapse: collapse;
+  margin: 16px 0;
+  td{
+    border: 1px solid #282523;
+    padding: 1px 4px;
   }
 }
-a{
-  color:#2c84cc;
+div#here{
+  border: 1px solid #282523;
+  padding: 8px;
 }
 
 .transparent{

@@ -6,24 +6,29 @@
 }
 
 .inner {
-  width: 100%;
+  width: 96%;
   max-width: 1366px;
   margin: 0 auto;
   overflow-x: hidden;
 }
 
-ul, ol {
-  font-size: 18px;
-  margin: 8px 0;
-  padding-inline-start: 2em;
+h1 {
+  margin: 8x 0 12px;
 }
 
-ul li, ol li {
-  margin: 0 0 4px;
+table {
+  border-collapse: collapse;
+  margin: 16px 0;
 }
 
-a {
-  color: #2c84cc;
+table td {
+  border: 1px solid #282523;
+  padding: 1px 4px;
+}
+
+div#here {
+  border: 1px solid #282523;
+  padding: 8px;
 }
 
 .transparent {
