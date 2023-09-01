@@ -37,11 +37,15 @@ div.here {
 }
 
 div.here#here {
-  margin: 4px 0 16px;
+  margin: 4px 0 12px;
 }
 
 div.here.list {
-  margin: 16px 0;
+  margin: 12px 0;
+}
+
+div.here#list2 {
+  margin: 12px 0 0;
 }
 
 div.here#list2 p {
@@ -54,10 +58,31 @@ div.here#list3 {
 
 div.here#list4 {
   display: inline-block;
+  margin: 12px;
 }
 
 div.here#list4 p {
   text-align: center;
+}
+
+p.fz12 {
+  font-size: 12px;
+}
+
+p.fz144 {
+  font-size: 14.4px;
+}
+
+p.fz16 {
+  font-size: 16px;
+}
+
+p.fz18 {
+  font-size: 18px;
+}
+
+p.dib {
+  display: inline-block;
 }
 
 .transparent {
