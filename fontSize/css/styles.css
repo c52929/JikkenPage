@@ -114,6 +114,14 @@ p#fz120percent {
   font-size: 120%;
 }
 
+div.dib {
+  border: 1px solid #282523;
+  box-sizing: border-box;
+  display: inline-block;
+  margin: 12px 0;
+  width: 100%;
+}
+
 .transparent {
   opacity: 0 !important;
 }
