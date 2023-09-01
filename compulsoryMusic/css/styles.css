@@ -141,6 +141,34 @@ div#updates table td p {
   margin: 0;
 }
 
+.landscape {
+  display: none;
+}
+
+@media (orientation: landscape) {
+  table td.small {
+    font-size: 1em;
+  }
+  table td.toosmall {
+    font-size: 1em;
+  }
+  .smartphone {
+    display: none;
+  }
+  .landscape {
+    display: inline-block;
+  }
+}
+
+@media (min-width: 768px) {
+  table td.small {
+    font-size: 1em;
+  }
+  table td.toosmall {
+    font-size: 1em;
+  }
+}
+
 .transparent {
   opacity: 0 !important;
 }
