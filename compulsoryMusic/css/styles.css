@@ -40,6 +40,19 @@ h2 a {
   text-align: center;
 }
 
+div.margin5 {
+  margin: 5px 0;
+}
+
+div.margin5 p.dib {
+  display: inline-block;
+  margin: 0;
+}
+
+p.fz16px {
+  font-size: 16px;
+}
+
 div#contents {
   border: 1px solid #282523;
   display: inline-block;
@@ -105,8 +118,12 @@ p {
   color: #008839;
 }
 
-p.gekiatsu {
+div.gekiatsu {
   display: inline-block;
+}
+
+div.gekiatsu p {
+  color: #008839;
 }
 
 .red {
@@ -119,7 +136,7 @@ p.gekiatsu {
 
 div#updates {
   color: #a1a499;
-  font-size: 11px;
+  font-size: 12px;
   margin: 36px 0 4px;
 }
 
@@ -133,7 +150,7 @@ div#updates table {
 
 div#updates table td {
   border: 1px #ccc solid;
-  font-size: 11px;
+  font-size: 12px;
 }
 
 div#updates table td.noBorder {
@@ -141,7 +158,7 @@ div#updates table td.noBorder {
 }
 
 div#updates table td p {
-  font-size: 11px;
+  font-size: 12px;
   margin: 0;
 }
 
@@ -170,6 +187,12 @@ div#updates table td p {
   }
   table td.toosmall {
     font-size: 1em;
+  }
+  .smartphone {
+    display: none;
+  }
+  .landscape {
+    display: inline-block;
   }
 }
 

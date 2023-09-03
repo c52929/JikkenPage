@@ -32,6 +32,16 @@ h2{
 .tac{
   text-align: center;
 }
+div.margin5{
+  margin: 5px 0;
+  p.dib{
+    display: inline-block;
+    margin: 0;
+  }
+}
+p.fz16px{
+  font-size: 16px;
+}
 div#contents{
   border: 1px solid #282523;
   display: inline-block;
@@ -83,8 +93,11 @@ p{
 .gekiatsu{
   color: #008839;
 }
-p.gekiatsu{
+div.gekiatsu{
   display: inline-block;
+  p{
+    color: #008839;
+  }
 }
 .red{
   color:#f00;
@@ -94,7 +107,7 @@ p.gekiatsu{
 }
 div#updates{
   color: #a1a499;
-  font-size: 11px;
+  font-size: 12px;
   margin: 36px 0 4px;
   p{
     margin: 0 0 4px;
@@ -103,12 +116,12 @@ div#updates{
     border: none;
     td{
       border: 1px #ccc solid;
-      font-size: 11px;
+      font-size: 12px;
       &.noBorder{
         border: 0;
       }
       p{
-        font-size: 11px;
+        font-size: 12px;
         margin: 0;
       }
     }
@@ -144,6 +157,12 @@ div#updates{
     &.toosmall{
       font-size: 1em;
     }
+  }
+  .smartphone{
+    display: none;
+  }
+  .landscape{
+    display: inline-block;
   }
 }
 
