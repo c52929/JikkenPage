@@ -157,11 +157,6 @@ div#updates table td.noBorder {
   border: 0;
 }
 
-div#updates table td p {
-  font-size: 12px;
-  margin: 0;
-}
-
 .landscape {
   display: none;
 }
