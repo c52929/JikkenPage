@@ -40,15 +40,6 @@ h2 a {
   text-align: center;
 }
 
-div.margin5 {
-  margin: 5px 0;
-}
-
-div.margin5 p.dib {
-  display: inline-block;
-  margin: 0;
-}
-
 p.fz16px {
   font-size: 16px;
 }

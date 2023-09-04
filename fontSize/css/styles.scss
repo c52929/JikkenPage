@@ -114,6 +114,28 @@ div.marginn{
   margin: 12px 0;
 }
 
+div#updates{
+  color: #a1a499;
+  font-size: 12px;
+  margin: 36px 0 4px;
+  p{
+    margin: 0 0 4px;
+  }
+  table{
+    border: none;
+    td{
+      border: 1px #ccc solid;
+      font-size: 12px;
+      &.noBorder{
+        border: 0;
+      } 
+      &.priority{
+        white-space: nowrap;
+      }
+    }
+  }
+}
+
 
 .transparent{
   opacity:0 !important;
