@@ -41,10 +41,6 @@ h2 a {
   text-align: center;
 }
 
-p.fz16px {
-  font-size: 16px;
-}
-
 div#contents {
   border: 1px solid #282523;
   display: inline-block;
@@ -108,14 +104,7 @@ p {
 
 .gekiatsu {
   color: #008839;
-}
-
-div.gekiatsu {
   display: inline-block;
-}
-
-div.gekiatsu p {
-  color: #008839;
 }
 
 .red {
@@ -133,16 +122,16 @@ div#updates {
 }
 
 div#updates p {
-  margin: 0 0 4px;
+  margin: 0;
 }
 
 div#updates table {
+  margin-top: 4px;
   border: none;
 }
 
 div#updates table td {
   border: 1px #ccc solid;
-  font-size: 12px;
 }
 
 div#updates table td.noBorder {
