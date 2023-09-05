@@ -12,6 +12,7 @@
   margin: 0 auto;
   overflow-x: hidden;
   width: 96%;
+  -webkit-text-size-adjust: 100%;
 }
 
 a,
