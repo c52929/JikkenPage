@@ -87,11 +87,15 @@ table td.priority {
 }
 
 table td.small {
-  font-size: 0.84em;
+  font-size: 0.96em;
 }
 
-table td.smartphonePriority {
-  border: none;
+table td.smartphonePriority#noBorderTop {
+  border-top: #fff 1px solid;
+}
+
+table td.smartphonePriority#noBorderBottom {
+  border-bottom: #fff 1px solid;
 }
 
 table td span.nowrap {
@@ -149,7 +153,7 @@ div#updates table td.priorityCenter {
 
 @media (orientation: landscape) {
   table td.small {
-    font-size: 0.84em;
+    font-size: 0.72em;
   }
   .smartphone {
     display: none;

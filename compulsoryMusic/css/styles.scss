@@ -68,10 +68,16 @@ table{
       white-space: nowrap;
     }
     &.small{
-      font-size: 0.84em;
+      font-size: 0.96em;
     }
     &.smartphonePriority{
-      border:none;
+      // border:none;
+      &#noBorderTop{
+        border-top:#fff 1px solid;
+      }
+      &#noBorderBottom{
+        border-bottom: #fff 1px solid;
+      }
     }
     span.nowrap{
       display: inline-block;
@@ -123,7 +129,7 @@ div#updates{
 @media(orientation:landscape){
   table td{
     &.small{
-      font-size: 0.84em;
+      font-size: 0.72em;
     }
   }
   .smartphone{
