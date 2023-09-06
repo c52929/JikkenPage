@@ -90,10 +90,6 @@ table td.small {
   font-size: 0.96em;
 }
 
-table td.toosmall {
-  font-size: 0.84em;
-}
-
 table td span.nowrap {
   display: inline-block;
 }
