@@ -71,7 +71,7 @@ table{
       font-size: 0.96em;
     }
     &.toosmall{
-      font-size: 0.72em;
+      font-size: 0.84em;
     }
     span.nowrap{
       display: inline-block;
@@ -106,6 +106,10 @@ div#updates{
       &.noBorder{
         border: 0;
       }
+      &.priorityCenter{
+        white-space: nowrap;
+        text-align: center;
+      }
     }
   }
 }
@@ -122,6 +126,7 @@ div#updates{
     }
     &.toosmall{
       font-size: 1em;
+      white-space: nowrap;
     }
   }
   .smartphone{
@@ -138,6 +143,7 @@ div#updates{
     }
     &.toosmall{
       font-size: 1em;
+      white-space: nowrap;
     }
   }
   .smartphone{

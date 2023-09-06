@@ -91,7 +91,7 @@ table td.small {
 }
 
 table td.toosmall {
-  font-size: 0.72em;
+  font-size: 0.84em;
 }
 
 table td span.nowrap {
@@ -138,6 +138,11 @@ div#updates table td.noBorder {
   border: 0;
 }
 
+div#updates table td.priorityCenter {
+  white-space: nowrap;
+  text-align: center;
+}
+
 .landscape {
   display: none;
 }
@@ -148,6 +153,7 @@ div#updates table td.noBorder {
   }
   table td.toosmall {
     font-size: 1em;
+    white-space: nowrap;
   }
   .smartphone {
     display: none;
@@ -163,6 +169,7 @@ div#updates table td.noBorder {
   }
   table td.toosmall {
     font-size: 1em;
+    white-space: nowrap;
   }
   .smartphone {
     display: none;
