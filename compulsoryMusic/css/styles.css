@@ -90,12 +90,14 @@ table td.small {
   font-size: 0.96em;
 }
 
-table td.smartphonePriority#noBorderTop {
-  border-top: #fff 1px solid;
+table td.smartphonePriority#noBorderBottom {
+  border-bottom: none;
+  padding-bottom: 0;
 }
 
-table td.smartphonePriority#noBorderBottom {
-  border-bottom: #fff 1px solid;
+table td.smartphonePriority#noBorderTop {
+  border-top: none;
+  padding-top: 0;
 }
 
 table td span.nowrap {
@@ -153,7 +155,7 @@ div#updates table td.priorityCenter {
 
 @media (orientation: landscape) {
   table td.small {
-    font-size: 0.72em;
+    font-size: 0.84em;
   }
   .smartphone {
     display: none;

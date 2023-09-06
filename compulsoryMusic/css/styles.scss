@@ -72,11 +72,13 @@ table{
     }
     &.smartphonePriority{
       // border:none;
-      &#noBorderTop{
-        border-top:#fff 1px solid;
-      }
       &#noBorderBottom{
-        border-bottom: #fff 1px solid;
+        border-bottom: none;
+        padding-bottom: 0;
+      }
+      &#noBorderTop{
+        border-top:none;
+        padding-top: 0;
       }
     }
     span.nowrap{
@@ -129,7 +131,7 @@ div#updates{
 @media(orientation:landscape){
   table td{
     &.small{
-      font-size: 0.72em;
+      font-size: 0.84em;
     }
   }
   .smartphone{
