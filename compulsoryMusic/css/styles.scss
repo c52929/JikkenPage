@@ -70,6 +70,9 @@ table{
     &.small{
       font-size: 0.84em;
     }
+    &.smartphonePriority{
+      border:none;
+    }
     span.nowrap{
       display: inline-block;
     }
@@ -116,14 +119,11 @@ div#updates{
 }
 
 
+
 @media(orientation:landscape){
   table td{
     &.small{
-      font-size: 1em;
-    }
-    &.toosmall{
-      font-size: 1em;
-      white-space: nowrap;
+      font-size: 0.84em;
     }
   }
   .smartphone{
@@ -137,10 +137,6 @@ div#updates{
   table td{
     &.small{
       font-size: 1em;
-    }
-    &.toosmall{
-      font-size: 1em;
-      white-space: nowrap;
     }
   }
   .smartphone{

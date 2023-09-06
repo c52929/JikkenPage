@@ -90,6 +90,10 @@ table td.small {
   font-size: 0.84em;
 }
 
+table td.smartphonePriority {
+  border: none;
+}
+
 table td span.nowrap {
   display: inline-block;
 }
@@ -145,11 +149,7 @@ div#updates table td.priorityCenter {
 
 @media (orientation: landscape) {
   table td.small {
-    font-size: 1em;
-  }
-  table td.toosmall {
-    font-size: 1em;
-    white-space: nowrap;
+    font-size: 0.84em;
   }
   .smartphone {
     display: none;
@@ -162,10 +162,6 @@ div#updates table td.priorityCenter {
 @media (min-width: 768px) {
   table td.small {
     font-size: 1em;
-  }
-  table td.toosmall {
-    font-size: 1em;
-    white-space: nowrap;
   }
   .smartphone {
     display: none;
