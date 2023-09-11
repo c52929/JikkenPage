@@ -122,7 +122,9 @@ div#updates{
   }
 }
 
-.landscape{
+.landscape,
+.onlyLandscape,
+.butLandscape{
   display: none;
 }
 
@@ -134,11 +136,13 @@ div#updates{
       font-size: 0.84em;
     }
   }
-  .smartphone{
-    display: none;
+  .smartphone,
+  .butLandscape{
+    display: none !important;
   }
-  .landscape{
-    display: inline-block;
+  .landscape,
+  .onlyLandscape{
+    display: inline-block !important;
   }
 }
 @media(min-width:768px){
@@ -147,11 +151,13 @@ div#updates{
       font-size: 1em;
     }
   }
-  .smartphone{
-    display: none;
+  .smartphone,
+  .onlyLandscape{
+    display: none !important;
   }
-  .landscape{
-    display: inline-block;
+  .landscape,
+  .butLandscape{
+    display: inline-block !important;
   }
 }
 

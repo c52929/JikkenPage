@@ -149,7 +149,9 @@ div#updates table td.priorityCenter {
   text-align: center;
 }
 
-.landscape {
+.landscape,
+.onlyLandscape,
+.butLandscape {
   display: none;
 }
 
@@ -157,11 +159,13 @@ div#updates table td.priorityCenter {
   table td.small {
     font-size: 0.84em;
   }
-  .smartphone {
-    display: none;
+  .smartphone,
+  .butLandscape {
+    display: none !important;
   }
-  .landscape {
-    display: inline-block;
+  .landscape,
+  .onlyLandscape {
+    display: inline-block !important;
   }
 }
 
@@ -169,11 +173,13 @@ div#updates table td.priorityCenter {
   table td.small {
     font-size: 1em;
   }
-  .smartphone {
-    display: none;
+  .smartphone,
+  .onlyLandscape {
+    display: none !important;
   }
-  .landscape {
-    display: inline-block;
+  .landscape,
+  .butLandscape {
+    display: inline-block !important;
   }
 }
 
