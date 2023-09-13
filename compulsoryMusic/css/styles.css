@@ -100,6 +100,10 @@ table td.smartphonePriority#noBorderTop {
   padding-top: 0;
 }
 
+table td.noBorder {
+  border: none;
+}
+
 table td span.nowrap {
   display: inline-block;
 }
@@ -141,7 +145,7 @@ div#updates table td {
 }
 
 div#updates table td.noBorder {
-  border: 0;
+  border: none;
 }
 
 div#updates table td.priorityCenter {

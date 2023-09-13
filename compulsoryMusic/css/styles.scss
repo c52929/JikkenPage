@@ -81,6 +81,9 @@ table{
         padding-top: 0;
       }
     }
+    &.noBorder{
+      border: none;
+    }
     span.nowrap{
       display: inline-block;
     }
@@ -112,7 +115,7 @@ div#updates{
     td{
       border: 1px #ccc solid;
       &.noBorder{
-        border: 0;
+        border: none;
       }
       &.priorityCenter{
         white-space: nowrap;
