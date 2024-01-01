@@ -110,12 +110,13 @@ div#updates{
     margin: 0;
   }
   table{
-    margin-top: 4px;
+    margin-top: 0;
     border: none;
     td{
       border: 1px #ccc solid;
       &.noBorder{
         border: none;
+        padding-top: 6px;
       }
       &.priorityCenter{
         white-space: nowrap;

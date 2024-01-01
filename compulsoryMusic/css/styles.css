@@ -136,7 +136,7 @@ div#updates p {
 }
 
 div#updates table {
-  margin-top: 4px;
+  margin-top: 0;
   border: none;
 }
 
@@ -146,6 +146,7 @@ div#updates table td {
 
 div#updates table td.noBorder {
   border: none;
+  padding-top: 6px;
 }
 
 div#updates table td.priorityCenter {
